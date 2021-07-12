@@ -1,0 +1,43 @@
+# proteger wpconfig.php 
+<files wp-config.php> 
+order allow,deny 
+deny from all 
+</files>
+# BEGIN HttpHeaders
+# Las directivas (líneas) entre `BEGIN HttpHeaders` y `END HttpHeaders` se generan
+# dinámicamente, y solo se deberían modificar mediante filtros de WordPress.
+# Cualquier cambio en las directivas que hay entre esos marcadores se sobreescribirá.
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  <FilesMatch "\.(php|html)$">
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Content-Security-Policy "default-src *; script-src *; style-src *; img-src *; connect-src *; font-src *; media-src *; report-uri *; child-src *; form-action *; frame-ancestors *; object-src *; frame-src *; worker-src *; manifest-src *; navigate-to *; prefetch-src *; base-uri *"
+  </FilesMatch>
+</IfModule>
+# END HttpHeaders
+# BEGIN HttpHeadersAuth
+# Las directivas (líneas) entre `BEGIN HttpHeadersAuth` y `END HttpHeadersAuth` se generan
+# dinámicamente, y solo se deberían modificar mediante filtros de WordPress.
+# Cualquier cambio en las directivas que hay entre esos marcadores se sobreescribirá.
+# END HttpHeadersAuth
+# BEGIN HttpHeadersCompression
+# Las directivas (líneas) entre `BEGIN HttpHeadersCompression` y `END HttpHeadersCompression` se generan
+# dinámicamente, y solo se deberían modificar mediante filtros de WordPress.
+# Cualquier cambio en las directivas que hay entre esos marcadores se sobreescribirá.
+# END HttpHeadersCompression
+# BEGIN HttpHeadersContentType
+# Las directivas (líneas) entre `BEGIN HttpHeadersContentType` y `END HttpHeadersContentType` se generan
+# dinámicamente, y solo se deberían modificar mediante filtros de WordPress.
+# Cualquier cambio en las directivas que hay entre esos marcadores se sobreescribirá.
+# END HttpHeadersContentType
+# BEGIN HttpHeadersExpires
+# Las directivas (líneas) entre `BEGIN HttpHeadersExpires` y `END HttpHeadersExpires` se generan
+# dinámicamente, y solo se deberían modificar mediante filtros de WordPress.
+# Cualquier cambio en las directivas que hay entre esos marcadores se sobreescribirá.
+# END HttpHeadersExpires
+# BEGIN HttpHeadersTiming
+# Las directivas (líneas) entre `BEGIN HttpHeadersTiming` y `END HttpHeadersTiming` se generan
+# dinámicamente, y solo se deberían modificar mediante filtros de WordPress.
+# Cualquier cambio en las directivas que hay entre esos marcadores se sobreescribirá.
+# END HttpHeadersTiming

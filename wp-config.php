@@ -11,6 +11,8 @@
 /**
  * Pantheon platform settings. Everything you need should already be set.
  */
+define('WP_CACHE', true);
+define( 'WPCACHEHOME', '/code/wp-content/plugins/wp-super-cache/' );
 if (file_exists(dirname(__FILE__) . '/wp-config-pantheon.php') && isset($_ENV['PANTHEON_ENVIRONMENT'])) {
 	require_once(dirname(__FILE__) . '/wp-config-pantheon.php');
 
