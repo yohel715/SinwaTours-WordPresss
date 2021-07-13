@@ -110,6 +110,25 @@ p {
   margin-right: 1rem;
 }
 
+.button{
+  background-color: var(--sinwa_claro);
+  color: var(--sinwa_blanco);
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 10px 30px;
+}
+
+.button:hover{
+  background-color: var(--sinwa_acento);
+}
+
+.error{
+  justify-content: center;
+  text-align: center;
+  font-size: 4.5rem;
+  margin: 0px !important;
+}
+
 /**
 * Header
 */
@@ -276,6 +295,10 @@ h1.hero:after {
   float: right;
   margin-bottom: 20px;
   margin-top: 20vh;
+}
+.call a{
+  text-decoration: none;
+  color: white;
 }
 
 .call span {

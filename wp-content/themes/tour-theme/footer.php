@@ -2,31 +2,32 @@
     <div class="footer">
       <div class="container">
         <div class="center">
-          <a
+          <a target="_blank" href="https://www.facebook.com/SinwaTours"><span
             class="iconify logof"
             data-icon="akar-icons:facebook-fill"
             data-inline="false"
-          ></a>
-          <a
+          ></span>
+          </a>
+          <a target="_blank" href="https://www.instagram.com/sinwatours"><span
             class="iconify logof"
             data-icon="ant-design:instagram-filled"
             data-inline="false"
-          ></a>
-          <a
+          ></span></a>
+          <a target="_blank" href="https://www.linkedin.com/in/sindy-brown-49124046/#"><span
             class="iconify logof"
             data-icon="akar-icons:linkedin-fill"
             data-inline="false"
-          ></a>
-          <a
+          ></span]></a>
+          <a target="_blank" href="https://www.tripadvisor.com.mx/Attraction_Review-g951347-d4891764-Reviews-SinwaTours_Tour_Operator-Monteverde_Province_of_Puntarenas.html"><span
             class="iconify logof"
             data-icon="entypo-social:tripadvisor"
             data-inline="false"
-          ></a>
-          <a
+          ></span></a>
+          <a target="_blank" href="https://wa.me/50647005445"><span
             class="iconify logof"
             data-icon="bi:whatsapp"
             data-inline="false"
-          ></a>
+          ></span></a>
         </div>
         <div class="center">
           <p class="p_captions">

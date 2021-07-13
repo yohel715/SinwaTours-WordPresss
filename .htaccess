@@ -12,7 +12,7 @@ deny from all
   <FilesMatch "\.(php|html)$">
     Header set X-Frame-Options "SAMEORIGIN"
     Header set X-XSS-Protection "1; mode=block"
-    Header set Content-Security-Policy "default-src *; script-src *; style-src *; img-src *; connect-src *; font-src *; media-src *; report-uri *; child-src *; form-action *; frame-ancestors *; object-src *; frame-src *; worker-src *; manifest-src *; navigate-to *; prefetch-src *; base-uri *"
+    Header set Content-Security-Policy "font-src *"
   </FilesMatch>
 </IfModule>
 # END HttpHeaders

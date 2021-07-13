@@ -15,7 +15,12 @@ function add_script()
    wp_enqueue_script('icons');
 }
 
-add_theme_support( 'menus' );
+add_action( 'after_setup_theme', 'register_primary_menu' );
+ 
+function register_primary_menu() {
+    register_nav_menu( 'primary', __( 'Primary Menu', 'theme-text-domain' ) );
+}
+//add_theme_support( 'menus' );
 
 add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
 

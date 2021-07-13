@@ -29,7 +29,7 @@
       </div>
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-      <?php wp_nav_menu( array( 'menu_class' => 'nav', 'container' => 'ul', )); ?>
+      <?php wp_nav_menu( array('theme_location' => 'primary', 'menu_class' => 'nav', 'container' => 'ul', )); ?>
     </div>
   </div>
 </div>
