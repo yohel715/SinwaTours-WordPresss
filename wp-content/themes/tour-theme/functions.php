@@ -31,6 +31,11 @@ function special_nav_class ($classes, $item) {
   return $classes;
 }
 
+/**
+ * WooCommerce 
+ */
+add_theme_support('woocommerce');
+
 //support featured image
 add_theme_support('post-thumbnails');
 
